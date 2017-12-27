@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | pricing
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    main#pricing-section
+      .container
+        .row
+          .col-xs-12
+            h2 Pricing
+            p
+              | You can subscribe to any of the following options and/or both.
+
+            .cols-block
+              .cols
+                p.headtext Transfer certificate mapping
+                .box#box1
+                  h4 only pay
+                    span $1
+                  p per transfer certificate processed
+              .cols
+                p.headtext PHI product comparison
+                .box#box2
+                  h4 only for
+                    span $5,450
+                  p monthly fee<br />(excl. GST)
+              .cols
+                p.headtext FREE TRIAL
+                .box#box3
+                  h4 30 days
+                    span FREE TRAIL
+                  p 
+                    | send request to<br/ >
+                    a(href="mailto:info@decisioncraft.com.au") info@decisioncraft.com.au                
+                
+
+
+            
+            p.note
+              | New account access can be requested by sending an email to 
+              a(href="mailto:info@decisioncraft.com.au") info@decisioncraft.com.au
+            
+    
+    include includes/_footerfixed.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

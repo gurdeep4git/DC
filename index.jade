@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | Home
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    main#home-section
+      .container
+        .row
+          .col-sm-10
+            .row
+              .col-sm-7
+                .sec-left
+                  h2
+                    | DecisionCraft helps private health insurers with<br />PHI product insights and product mappings.
+                  p.line1
+                    | This is a secured site predominantly used by private health<br />insurance companies.
+                  h3.line2
+                    | All products from all the health insurers in Australia are available.*
+
+                  span.line3 (including closed, corporate products)
+
+                  p.line4 * Data is live and updated every two to three months
+
+                  p.line5
+                    | What’s the benefit to you? 
+                    a(href="benefits.html") Click here     
+              .col-sm-5
+                .sec-right
+                  a(class="btn btn-default btn-blue btn-block" href="transfer.html") Transfer certificate mapping
+                  a(class="btn btn-default btn-blue btn-block" href="phiproduct.html") PHI product comparison
+                
+
+
+            
+            
+    
+    include includes/_footerfixed.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DC | selection</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/less" href="css/style.less">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    -->
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="logo-block"><a href="index.html"><img src="images/logo-grey.png" alt="logo" class="img-responsive"></a></div>
+          </div>
+          <div class="col-xs-6">
+            <div class="login-block text-right"><a href="login.html" class="btn btn-default btn-header-login">health fund login</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="selection-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-10"><a href="#" class="back-btn">Back</a>
+            <h2>Transfer to CBHS</h2>
+            <div class="block">
+              <div class="row">
+                <div class="col-sm-2 col-md-3">
+                  <div class="sec-left"><span>Transfer from fund</span></div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                  <div class="sec-middle">
+                    <!--input(type="text" class="form-control radius-0" value="Medibank")-->
+                    <select class="form-control radius-0">
+                      <option>Medibank</option>
+                      <option>Medibank</option>
+                      <option>Medibank</option>
+                      <option>Medibank</option>
+                      <option>Medibank</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="sec-right"><span>Select the fund where the member transfered from.</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="block">
+              <div class="row mrgn-btm-10">
+                <div class="col-sm-2 col-md-3">
+                  <div class="sec-left"><span>Product name</span></div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                  <div class="sec-middle">
+                    <div class="form-group">
+                      <div class="icon-addon">
+                        <input id="pname" type="text" class="form-control radius-0">
+                        <label for="pname" class="glyphicon glyphicon-search"></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="sec-right"><span>Start typing the product name and select <a href="javascript:void(0);">[Show all]</a></span></div>
+                </div>
+              </div>
+              <div class="row mrgn-btm-20">
+                <div class="col-sm-2 col-md-3">
+                  <div class="sec-left"><span>Excess</span></div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                  <div class="sec-middle">
+                    <ul id="excess-list">
+                      <li><a>nil</a></li>
+                      <li><a>100</a></li>
+                      <li><a>500</a></li>
+                      <li><a>1000</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="sec-right"><span>Choose the excess.</span></div>
+                </div>
+              </div>
+              <div class="row mrgn-btm-20">
+                <div class="col-sm-2 col-md-3">
+                  <div class="sec-left"><span>Copayment</span></div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                  <div class="sec-middle">
+                    <ul id="copayment-list">
+                      <li><a>nil</a></li>
+                      <li><a>100</a></li>
+                      <li><a>500</a></li>
+                      <li><a>1000</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="sec-right"><span>Choose the copayment.</span></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-2 col-md-3">
+                  <div class="sec-left"><span>Gap assist</span></div>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                  <div class="sec-middle">
+                    <ul id="gap-list">
+                      <li><a>nil</a></li>
+                      <li><a>100</a></li>
+                      <li><a>500</a></li>
+                      <li><a>1000</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <div class="sec-right"><span>Choose the gap assist.               </span></div>
+                </div>
+              </div>
+            </div><a href="transferresult.html" class="btn btn-default btn-blue">Map Transfer Certificate             </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="fixed-btm">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul>
+              <li><a href="about.html">about us</a></li>
+              <li><a href="benefits.html">benefits</a></li>
+              <li><a href="pricing.html">pricing</a></li>
+              <li><a href="transfer.html">transfer</a></li>
+              <li><a href="phiproduct.html">phi product</a></li>
+              <li><a href="contact.html">contacts</a></li>
+              <li><a href="disclaimer.html">disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/less.js"></script>
+  </body>
+</html>

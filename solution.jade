@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | solution
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    main#solution-section
+      .container
+        .row
+          .col-xs-12
+            h2 Our solution
+            p Please choose one of the following
+            .cols-block
+              .row
+                .col-sm-7.col-md-5
+                  .row
+                    .col-sm-4
+                      a(href="selections.html")
+                        .col
+                          p transfer<br />certificate<br />mapping
+                    .col-sm-4
+                      a(href="equivalentproduct.html")
+                        .col
+                          p Direct<br />PHI product<br />benchmarking
+                    .col-sm-4
+                      a(href="directproduct.html")
+                        .col
+                          p Equivalent<br />PHI product<br />benchmarking        
+
+
+            
+            
+    
+    include includes/_footerfixed.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

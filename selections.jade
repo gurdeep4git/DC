@@ -1,0 +1,141 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | selection
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    section#selection-section
+      .container
+        .row
+          .col-sm-12.col-md-10
+            a(href="#" class="back-btn") Back
+            h2 Transfer to CBHS
+            .block
+              .row
+                .col-sm-2.col-md-3
+                  .sec-left
+                    span Transfer from fund
+                        
+                .col-sm-4.col-md-3
+                  .sec-middle
+                    //input(type="text" class="form-control radius-0" value="Medibank")
+                    select.form-control.radius-0
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank
+
+                .col-sm-6.col-md-6
+                  .sec-right
+                    span Select the fund where the member transfered from.
+
+            .block
+              .row.mrgn-btm-10
+                .col-sm-2.col-md-3
+                  .sec-left
+                    span Product name
+                        
+                .col-sm-4.col-md-3
+                  .sec-middle
+                    .form-group
+                      .icon-addon
+                        input#pname.form-control(type='text' class="radius-0")
+                        label.glyphicon.glyphicon-search(for='pname')
+
+                .col-sm-6.col-md-6
+                  .sec-right
+                    span Start typing the product name and select 
+                      a(href="javascript:void(0);") [Show all]
+
+              .row.mrgn-btm-20
+                .col-sm-2.col-md-3
+                  .sec-left
+                    span Excess
+                        
+                .col-sm-4.col-md-3
+                  .sec-middle
+                    ul#excess-list
+                      li
+                        a nil
+                      li
+                        a 100
+                      li
+                        a 500
+                      li
+                        a 1000
+
+                .col-sm-6.col-md-6
+                  .sec-right
+                    span Choose the excess.
+
+              .row.mrgn-btm-20
+                .col-sm-2.col-md-3
+                  .sec-left
+                    span Copayment
+                        
+                .col-sm-4.col-md-3
+                  .sec-middle
+                    ul#copayment-list
+                      li
+                        a nil
+                      li
+                        a 100
+                      li
+                        a 500
+                      li
+                        a 1000
+
+                .col-sm-6.col-md-6
+                  .sec-right
+                    span Choose the copayment.
+
+              .row
+                  .col-sm-2.col-md-3
+                    .sec-left
+                      span Gap assist
+                          
+                  .col-sm-4.col-md-3
+                    .sec-middle
+                      ul#gap-list
+                        li
+                          a nil
+                        li
+                          a 100
+                        li
+                          a 500
+                        li
+                          a 1000
+
+                  .col-sm-6.col-md-6
+                    .sec-right
+                      span Choose the gap assist.               
+                      
+                                  
+
+            a(class="btn btn-default btn-blue" href="transferresult.html") Map Transfer Certificate             
+                  
+                
+
+
+            
+            
+    
+    include includes/_footerfixed.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

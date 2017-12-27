@@ -1,0 +1,123 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | Direct product comparison
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    section#direct-section
+      .container
+        .row
+          .col-sm-12.col-md-10
+            a(href="#" class="back-btn") Back
+            h2 Direct product comparison
+            table.table
+              thead
+                tr
+                  th
+                    span.hide Fund 0
+                  th
+                    | Fund 1
+                  th
+                    | Fund 2
+              tbody
+                tr
+                  td
+                    | Health fund
+                  td
+                    select(class="form-control radius-0")
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                  td
+                    select(class="form-control radius-0")
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank 
+                tr
+                  td
+                    | Product type
+                  td
+                    ul#product-type
+                      li
+                        a Hospital
+                      li
+                        a General
+                      li
+                        a Combined         
+                  td
+                    ul#product-type
+                      li
+                        a Hospital
+                      li
+                        a General
+                      li
+                        a Combined
+
+                tr
+                  td
+                    | Product category
+                  td
+                    ul#product-cat
+                      li
+                        a Open
+                      li
+                        a Close
+                      li
+                        a Corporate
+                      li
+                        a Corporate (closed)    
+                  td
+                    ul#product-cat
+                      li
+                        a Open
+                      li
+                        a Close
+                      li
+                        a Corporate
+                      li
+                        a Corporate (closed)                                            
+                      
+                tr
+                  td
+                    | Product name
+                  td
+                    select(class="form-control radius-0")
+                      option Top Hospital
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                  td
+                    select(class="form-control radius-0")
+                      option Top Hospital
+                      option Medibank
+                      option Medibank
+                      option Medibank                   
+
+            a(class="btn btn-default btn-blue pull-right" href="#") Direct compare           
+                  
+                
+
+
+            
+            
+    
+    include includes/_footer.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

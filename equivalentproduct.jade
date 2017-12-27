@@ -1,0 +1,141 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | Equivalent product comparison
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    section#equivalent-section
+      .container
+        .row
+          .col-sm-12.col-md-10
+            a(href="#" class="back-btn") Back
+            h2 Equivalent product comparison
+            .block
+              .row
+                .col-sm-3.col-md-3
+                  .sec-left
+                    span Health fund
+                        
+                .col-sm-5.col-md-5
+                  .sec-middle
+                    //input(type="text" class="form-control radius-0" value="Medibank")
+                    select.form-control.radius-0
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank
+
+                .col-sm-4.col-md-4
+                  .sec-right
+                    span Select the fund to compare.
+
+            .block
+              .row.mrgn-btm-20
+                .col-sm-3.col-md-3
+                  .sec-left
+                    span Product type
+                        
+                .col-sm-5.col-md-5
+                  .sec-middle
+                    ul#product-type-list
+                      li
+                        a Hospital
+                      li
+                        a General
+                      li
+                        a Combined
+
+                .col-sm-4.col-md-4
+                  .sec-right
+                    span Select the product type.
+
+              .row.mrgn-btm-20
+                .col-sm-3.col-md-3
+                  .sec-left
+                    span Product category
+                        
+                .col-sm-5.col-md-5
+                  .sec-middle
+                    ul#product-cat-list
+                      li
+                        a Open
+                      li
+                        a Closed
+                      li
+                        a Corporate
+                      li
+                        a Corporate (closed)
+
+                .col-sm-4.col-md-4
+                  .sec-right
+                    span Select the product category.
+
+            .block
+              .row
+                .col-sm-3.col-md-3
+                  .sec-left
+                    span Product name
+                        
+                .col-sm-5.col-md-5
+                  .sec-middle
+                    //input(type="text" class="form-control radius-0" value="Medibank")
+                    select.form-control.radius-0
+                      option Top Hospital
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank
+
+                .col-sm-4.col-md-4
+                  .sec-right
+                    span Select the product.
+
+            .block.border-btm-0
+              .row
+                .col-sm-3.col-md-3
+                  .sec-left
+                    span Compare health funds
+                        
+                .col-sm-5.col-md-5
+                  .sec-middle
+                    //input(type="text" class="form-control radius-0" value="Medibank")
+                    select.form-control.radius-0
+                      option CBHS
+                      option Medibank
+                      option Medibank
+                      option Medibank
+                      option Medibank
+
+                .col-sm-4.col-md-4
+                  .sec-right
+                    span You can select up to 3 health funds.                  
+                      
+                                  
+
+            a(class="btn btn-default btn-blue pull-right" href="transferresult.html") Equivalent compare           
+                  
+                
+
+
+            
+            
+    
+    include includes/_footer.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

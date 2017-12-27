@@ -1,0 +1,143 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | PHI product
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    main#phiproduct-section
+      .container
+        .row
+          .col-xs-12
+            h2 PHI product comparison
+            p There are two types of PHI product comparison that you can use.
+            .table-block
+              .row
+                .col-sm-10
+                  .table-responsive
+                    table.table
+                      tr
+                        td Features
+                        td 
+                          button.btn.btn-default.btn-blue.btn-block(type="button" id="direct") Direct product comparison
+                        td 
+                          button.btn.btn-default.btn-blue.btn-block(type="button" id="phi") PHI product comparison
+
+                      tr
+                        td Purpose
+                        td 
+                          | Useful when you want to directly compare one particular product of a health fund with one particular product of another health fund
+                        td
+                          | Useful when you want to compareone particular product of a health fund and search for equivalent product from few health funds.
+
+                      tr
+                        td Open Products (up-to-date)
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+
+                      tr
+                        td Closed products
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+                          
+                      tr
+                        td Corporate products
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+                          
+                      tr
+                        td Hospital services
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+                          
+                      tr
+                        td General services
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+
+                      tr
+                        td Benefit limits
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+
+                      tr
+                        td Item limits
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+
+                      tr
+                        td Waiting periods
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+                          
+                      tr
+                        td Excess/Copayment/Gap assist
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+                          
+                      tr
+                        td Links to standard information statement
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+                          
+                      tr
+                        td Preferred provider agreement
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok
+                          
+                      tr
+                        td Premium with each rebate tiers
+                        td
+                          span.glyphicon.glyphicon-ok 
+                        td
+                          span.glyphicon.glyphicon-ok                              
+                                        
+                           
+                        
+              
+
+            
+
+            
+            
+            
+    
+    include includes/_footer.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

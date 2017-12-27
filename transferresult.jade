@@ -1,0 +1,658 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | result
+    link(rel='stylesheet', type='text/css', href='css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    section#result-section
+      .container
+        .row
+          .col-xs-12.col-sm-10
+            .links-block
+              a("class=back-btn", href="#") back
+              a("class=transfer-btn", href="selections.html") new transfer
+
+            table.table.table-one
+              thead
+                tr
+                  th
+                    | Transfer to CBHS
+                    span Transfer certificate mapping
+                  th
+                    | Transfer from
+                    span.transferer Medibank
+
+                  th
+                    | Transfer to
+                    span.transferee CBHS
+              tbody
+                tr
+                  td
+                    | Hopsital product name
+                  td
+                    | standard hospital
+                  td
+                    | standard hospital
+
+                tr
+                  td
+                    | General product name
+                  td
+                    | silver extra
+                  td
+                    | silver extra
+
+                tr
+                  td
+                    | Combined product name
+                  td
+                    | ultimate cover
+                  td
+                    | CBHS cover        
+            
+            div.blue-bar.hospital-cover
+              div.arrow-holder
+                span.fa.fa-chevron-right.icon
+              h5 Hospital cover
+              //span.showmore-link show more
+
+            table.table.hospital-table.tbl-custom
+              tbody
+                tr
+                  td
+
+                    a(class="btn-grey active-btn") Covered
+                    a(class="btn-grey") Waiting periods (standard)
+                  td
+                    span.visible-0 ultimate cover
+                  td
+                    span.visible-0 ultimate cover
+
+                tr
+                  td
+                    | Accommodation
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr
+                  td
+                    | Pregnancy and birth related services
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Fertility treatment (e.g IVF)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Heart surgery (cardiac and related)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Major eye surgery (cataract, eye lens)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr
+                  td
+                    | Hip, knee, shoulder and elbow
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Hip and knee only
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Hip replacement only
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Renal dialysis (e.g. kidney failure)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Weight loss surgery (e.g gastric banding)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Sterilisation
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+
+                tr
+                  td
+                    | Plastic and reconstructive surgery
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Rehabilitation treatment (exercise program)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Psychiatric treatment
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Pallative care
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr
+                  td
+                    | Ambulance
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red                      
+            div.space-adjust
+            div.blue-bar.general-cover
+              div.arrow-holder
+                span.fa.fa-chevron-right.icon
+              h5 General cover
+              //span.showmore-link show more               
+            
+            table.table.general-table.tbl-custom
+              tbody
+                tr
+                  td
+                    a(class="btn-grey active-btn") Covered
+                    a(class="btn-grey") Annual limits
+                    a(class="btn-grey") Lifetime limits 
+                    a(class="btn-grey") Waiting periods
+                  td
+                    span.visible-0 ultimate cover
+                  td
+                    span.visible-0 ultimate cover
+
+                tr(data-parent="dental_general")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Dental general (e.g. cleaning & filings)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red.hide
+                    span $1,200 per person
+
+                tr.push-in.dental_general
+                  td
+                    | Periodic oral examination
+                  td
+                    span.glyphicon.glyphicon-ok.blue.hide
+                    span $1,200 per person
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.dental_general
+                  td
+                    | Cleaning and scale
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr.push-in.dental_general
+                  td
+                    | Fluoride treatment
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                tr.push-in.dental_general
+                  td
+                    | Tooth extraction
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                // next line
+                tr(data-parent="major_dental")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Major dental (crowns, dentures, etc)
+                  td
+                    span 2 months
+                  td
+                    span 12 months
+
+                tr.push-in.major_dental
+                  td
+                    | Tooth extraction
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.major_dental
+                  td
+                    | Full crown veneered
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                // next line
+                tr(data-parent="endodontics")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Dental endodontics (e.g. root canal)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.endodontics
+                  td
+                    | Filling of one root canal
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                // next line
+                tr(data-parent="orthodontics")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Dental orthodontics (e.g. braces)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.orthodontics
+                  td
+                    | Braces for upper, lower teen, incl removal plus retainer fittings
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                // next line
+                tr(data-parent="Optical")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Optical (e.g. frames and lenses)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.Optical
+                  td
+                    | Single vision lenses and frames
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.Optical
+                  td
+                    | Muti-focal lenses and frames
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+                    
+                // next line
+                tr(data-parent="Physiotheraphy")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Physiotheraphy
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.Physiotheraphy
+                  td
+                    | Initial visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.Physiotheraphy
+                  td
+                    | Subsequent visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+
+                // next line
+                tr(data-parent="Chiropractic")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Chiropractic
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.Chiropractic
+                  td
+                    | Initial visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.Chiropractic
+                  td
+                    | Subsequent visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                // next line
+                tr(data-parent="remedial_massage")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Remedial massage
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.remedial_massage
+                  td
+                    | Initial visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.remedial_massage
+                  td
+                    | Subsequent visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                // next line
+                tr(data-parent="Acupuncture")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Acupuncture
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.Acupuncture
+                  td
+                    | Initial visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.Acupuncture
+                  td
+                    | Subsequent visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                // next line
+                tr(data-parent="Naturopathy")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Naturopathy
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.Naturopathy
+                  td
+                    | Initial visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.Naturopathy
+                  td
+                    | Subsequent visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red  
+                    
+                // next line
+                tr(data-parent="Podiatry")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Podiatry
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.Podiatry
+                  td
+                    | Initial visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.Podiatry
+                  td
+                    | Subsequent visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                // next line
+                tr(data-parent="Psychology")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Psychology
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.Psychology
+                  td
+                    | Initial visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                tr.push-in.Psychology
+                  td
+                    | Subsequent visit
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                // next line
+                tr(data-parent="prescription_pharmaceuticals")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Prescription pharmaceuticals (non PBS)
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.prescription_pharmaceuticals
+                  td
+                    | Per eligible prescription
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                // next line
+                tr(data-parent="hearing_aids")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Hearing aids
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.hearing_aids
+                  td
+                    | Per hearing aid
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red 
+                    
+                // next line
+                tr(data-parent="blood_glucose_monitors")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Blood glucose monitors
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.blood_glucose_monitors
+                  td
+                    | Per Monitor
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                // next line
+                tr(data-parent="ambulance_services")
+                  td
+                    div.arrow-holder
+                      span.fa.fa-chevron-right.icon
+                    | Ambulance services
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red
+
+                tr.push-in.ambulance_services
+                  td
+                    | Comprehensive cover
+                  td
+                    span.glyphicon.glyphicon-ok.blue
+                  td
+                    span.glyphicon.glyphicon-remove.red           
+
+            div.legend-area
+              ul
+                li 
+                  span.glyphicon.glyphicon-ok.blue
+                  span Covered
+                li 
+                  span.glyphicon.glyphicon-remove.red
+                  span Not covered
+                li 
+                  span P
+                  span Partically covered
+                li 
+                  span R
+                  span Restricted (covered to a limited extent, with reduced benefits)
+                li 
+                  span N
+                  span Not applicable  
+
+    include includes/_footer.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    script(src='js/scripts.js')
+    

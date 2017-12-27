@@ -1,0 +1,207 @@
+@media screen and (max-width: 767px){
+	main {
+    	padding: 20px 0 40px 0;
+	}
+	#home-section .sec-right {
+	    margin-top: 40px;
+	}
+	footer.fixed-btm{
+		position: relative;
+		padding-bottom: 30px;
+	}
+
+	/*about*/
+	#about-section .btn-blue{
+		font-size: 10px;
+    	padding: 12px 10px;
+	}
+	/*contact*/
+	#contact-section .btn-blue{
+		font-size: 10px;
+    	padding: 12px 10px;
+	}
+	/*pricing*/
+	#pricing-section .cols-block {
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-orient:vertical;
+	    -webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	    flex-direction:column;
+	    -webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    margin: 40px 0 40px 10px;
+	    width: 100%;
+	}
+	#pricing-section .cols-block .cols p.headtext{
+		margin-bottom: 5px;
+	}
+	#pricing-section .cols-block .cols{
+		margin-bottom: 25px;
+	}
+
+	/*solution*/
+	#solution-section .cols-block .col{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	/*benefit*/
+	#benefit-section .block{
+		padding: 0 15px;
+	}
+	#benefit-section .block p.subhead{
+		font-size: 14px;
+	}
+	#benefit-section .block p.subhead span{
+		font-size: 14px;
+    	margin-right: 10px;
+	}
+	#benefit-section .block .col-hold{
+		margin-left: 0;
+	}
+	#benefit-section .block .col-hold .example-div .inner-example{
+		width: 100%;
+		padding: 5px;
+	}
+
+	#benefit-section .block .col-hold .example-div .inner-example span{
+		font-size: 12px;
+	}
+	#benefit-section .block .col-hold .btns-div .btn-blue,
+	#benefit-section .block .col-hold .btns-div .btn-red{
+		width: 100%;
+	}
+	#benefit-section .block .col-hold .arrow-div{
+	   	-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		margin-bottom: 30px;
+	}
+	#benefit-section .block .col-hold .arrow-div img{
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-o-transform: rotate(90deg);	
+		transform: rotate(90deg);
+    	margin-bottom: 12px;
+
+	}
+	#benefit-section .block .col-hold .cost-block .box{
+		width: 100%;
+		padding: 15px;
+	}
+	/*selection*/
+	#selection-section .block .sec-middle input.radius-0{
+		margin:5px 0;
+	}
+	.sec-middle .form-group{
+		margin-bottom: 0;
+	}
+	#selection-section .block .sec-middle .form-group .icon-addon label.glyphicon{
+		top:3px;
+	}
+	#selection-section .block .sec-middle ul#copayment-list,
+	#selection-section .block .sec-middle ul#excess-list{
+		margin:5px 0;
+	}
+
+	/*equivalent*/
+	#equivalent-section .block .sec-middle select.radius-0 {
+    	margin-top: 0;
+    	
+	}
+	#equivalent-section .block .sec-middle select {
+    	width: 100%;
+    	margin: 5px 0 5px 0;
+    	
+	}
+	#equivalent-section .block .sec-middle ul#product-type-list,
+	#equivalent-section .block .sec-middle ul#product-cat-list{
+		margin-top: 0;
+		margin: 5px 0;
+	}
+	#equivalent-section .block .sec-middle ul#product-type-list li a{
+		width: auto;
+	}
+	#equivalent-section .block .sec-middle ul#product-cat-list li a{
+		padding: 6px;
+	}
+}
+
+@media screen and (min-width: 768px){
+	main {
+	    padding: 80px 0 60px 0;
+	}
+	#benefit-section .block .col-hold .example-div .inner-example{
+		width: 100%;
+	}	
+	#benefit-section .block .col-hold .example-div .inner-example span{
+		font-size: 12px;
+	}
+	#equivalent-section .block .sec-middle select{
+		width: 100%;
+	}
+	#equivalent-section .block .sec-middle ul#product-type-list li a{
+		width: 90px;
+	}	
+	#equivalent-section .block .sec-middle ul#product-cat-list li a{
+		padding:6px 8px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	main {
+	    padding: 80px 0 60px 0;
+	}
+	#benefit-section .block .col-hold .example-div .inner-example{
+		width: 415px;
+	}	
+	#benefit-section .block .col-hold .example-div .inner-example span{
+		font-size: 14px;
+	}
+	#equivalent-section .block .sec-middle select{
+		width: 88%;
+	}
+	#equivalent-section .block .sec-middle ul#product-type-list li a{
+		width:89px;
+	}
+	#equivalent-section .block .sec-middle ul#product-cat-list li a{
+		padding: 6px 8px;
+	}
+	#direct-section table tbody tr td ul#product-type li a{
+		width: 75px;
+    }
+    #direct-section table tbody tr td ul#product-cat li a{
+    	padding: 6px 3px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+	main {
+	    padding: 80px 0 60px 0;
+	}
+	#benefit-section .block .col-hold .example-div .inner-example{
+		width: 415px;
+	}	
+	#benefit-section .block .col-hold .example-div .inner-example span{
+		font-size: 14px;
+	}
+	#equivalent-section .block .sec-middle select{
+		width: 88%;
+	}
+	#equivalent-section .block .sec-middle ul#product-type-list li a{
+		width:107px;
+	}
+	#equivalent-section .block .sec-middle ul#product-cat-list li a{
+		padding: 6px 15px;
+	}
+	#direct-section table tbody tr td ul#product-type li a{
+		width: 92px;
+    }
+    #direct-section table tbody tr td ul#product-cat li a{
+    	padding: 6px 10px;
+    }
+}

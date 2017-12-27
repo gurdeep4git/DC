@@ -1,0 +1,91 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | benefits
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    main#benefit-section
+      .container
+        .row
+          .col-sm-12.col-md-10
+            h2 How our solution will benefit your health fund?
+            .block
+              .row
+                p.subhead
+                  span 1
+                  | Transfer certificate processing time reduced
+                .col-hold
+                  .col-sm-3
+                    .btns-div
+                      button(type="button" class="btn btn-default btn-red btn-block") 6 Minutes<br />savings
+                      butoon(type="button" class="btn btn-default btn-blue btn-block") per transfer certificate<br/ >processed
+                  .col-sm-3
+                    .arrow-div
+                      img(src="images/arrow.png")
+                      span convert this<br />to your organisation
+                  .col-sm-6
+                    .example-div
+                      p Hypothetical example
+                      .inner-example
+                        span 100 transfer certificate<br />processed in a month
+                        span X
+                        span 6 minutes<br />savings each
+                        span =
+                        span 10<br />hours savings
+
+            .block
+              .row
+                p.subhead
+                  span 2
+                  | Membership retention
+                .col-hold
+                  .col-sm-12
+                    .member-ret-text
+                      p.small
+                        | Our product benchmarking solution allows you to view particular product information from a particular health funds with all the important information side-by-side. It has benefit information at a service level and as well as pre-calculated rebate information. By providing accurate information to the member and able to compare PHI product easily could potentially save the member from terminating.
+                      p.note 
+                        | On average 1 member saved means $2,800 earned in revenue  
+
+            .block
+              .row
+                p.subhead
+                  span 3
+                  | Save acquisition cost
+                .col-hold
+                  .col-sm-12
+                    .cost-block
+                      .box
+                        span Each member retained
+                        span =
+                        span Cheap sale
+                      p
+                        | Each member retained means you don’t need to spend on acquiring those members. That would potentially save huge acquisition cost.  
+
+                                   
+
+                         
+              
+                
+
+
+            
+            
+    
+    include includes/_footer.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    

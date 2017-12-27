@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title DC | transfer
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(rel='stylesheet', type='text/less', href='css/style.less')
+    link(rel='stylesheet', type='text/css', href='css/responsive.css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body
+    include includes/_header.jade
+    main#transfer-section
+      .container
+        .row
+          .col-xs-12
+            h2 Transfer certificate mapping
+            p
+              | Transfer certificate mapping allows the health fund to find the equivalent product - “transferring from” fund to “transferring to” fund based<br /> on the product features.
+
+
+            p
+              | DecisionCraft developed an algorithm based model to precisely match a product from one health fund to another using the product features.<br /> This is the most accurate method and does not take into account any other external factors.
+
+            p
+              | Our solution is simple to use. It is simple as selecing the fund and search the product and click the mapping button. 
+
+
+            p
+              | This solution on average saves 6 minutes per transfer certificate processed per person. To give an example, if you process 600 transfer certificate<br /> using our solution per day, you can save 10 hours a day in productivity.
+
+              
+            p
+              | Request new access at 
+              a(href="mailto:info@decisioncraft.com.au") info@decisioncraft.com.au      
+
+
+            
+            a.btn.btn-default.btn-blue(href="login.html") Login
+            
+    
+    include includes/_footerfixed.jade
+
+    script(src='js/jquery-1.12.0.js')
+    script(src='js/bootstrap.js')
+    script(src='js/less.js')
+    
